@@ -1,0 +1,23 @@
+<%- include('partials/_header') %>
+
+    <div class="card col-md-4 mt-4 mx-auto">
+        <div class="card-header">
+            <h2 class="card-title">Sign up</h2>
+        </div>
+        <div class="card-body">
+            <% if(error) { %>
+                <div class="alert alert-danger">
+                    <%= error[0] %>
+                </div>
+                <% } %>
+                    <form action="/users/up" method="post">
+                        <div class="form-group mb-4">
+                            <input required autocomplete="off" type="email" name="email" placeholder="Insert your email" class="w-100 p-1">
+                        </div>
+                        <div class="form-group mb-4">
+                            <input required autocomplete="off" type="password" name="password" placeholder="Insert your password" class="w-100 p-1">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign up</button>
+                    </form>
+        </div>
+    </div>
