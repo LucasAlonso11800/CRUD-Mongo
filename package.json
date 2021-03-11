@@ -4,7 +4,7 @@
     "description": "app integrating node and mysql",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js"
+        "start": "index.js"
     },
     "author": "",
     "license": "ISC",
