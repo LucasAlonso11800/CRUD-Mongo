@@ -25,8 +25,6 @@ const userRoutes = require('./routes/users');
 mongoose.connect(process.env.MONGO_DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true
-}, () => {
-    console.log('Connected to Mongo')
 });
 
 app.set('port', process.env.PORT || 3000);
