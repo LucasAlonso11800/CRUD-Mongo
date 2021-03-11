@@ -1,9 +1,9 @@
 <%- include('partials/_header') %>
 
-    <div class="col-md-5 mt-5">
-        <div class="card">
+    <div class="col-md-4 mt-5 mx-auto">
+        <div class="card  border">
             <div class="card-body">
-                <form action="customers/edit/<%= data.id %>" method="POST">
+                <form action="/customers/edit/<%= data.id %>" method="POST">
                     <div class="form-group">
                         <input type="text" name="name" value="<%= data.name %>" class="form-control">
                     </div>

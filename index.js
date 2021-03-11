@@ -5,8 +5,6 @@ if (process.env.NODE_ENV !== "production") {
 const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
-const mysql = require('mysql');
-const myConnection = require('express-myconnection');
 const mongoose = require('mongoose')
 const passport = require('passport');
 const expSession = require('express-session');
@@ -37,13 +35,6 @@ app.set('views', path.join(__dirname, 'views'));
 
 // MIDDLEWARES
 app.use(morgan('dev'));
-
-app.use(myConnection(mysql, {
-    host: 'localhost',
-    user: 'root',
-    password: process.env.PASSWORD,
-    database: 'crudnodemysql'
-}));
 
 app.use(expSession({
     secret: process.env.SECRET,
