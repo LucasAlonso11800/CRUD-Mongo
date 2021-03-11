@@ -2,5 +2,5 @@ body {
     background: #000046;
     background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
     background: linear-gradient(to right, #1CB5E0, #000046);
-    min-width: 100%;
+    min-width: 540px;
 }
